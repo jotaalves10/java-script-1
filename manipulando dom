@@ -1,0 +1,14 @@
+  <p id = "titulo 1">"Ola mundo!"</p>
+     <div id = "caixa 1" style = "width: 100px; height:100px; background-color:blue;"></div>
+     <div id="conteudo"></div>
+     <img id = "foto" src = "imagem1.jpg" width = "200">
+     <p id="remover"> Este páragrafo será removido </p>
+     <script>
+        const titulo = document.getElementById("titulo 1")
+        titulo.textContent = "texto alterado!";
+        document.getElementById("caixa 1").style.backgroundColor = "red";
+        let p = document.createElement("p");
+        p.textContent = "Novo parágrafo adicionado"
+        document.getElementById("conteudo").appendChild(p);
+        document.getElementById("foto").src = "imagem2.jpg";
+        document.getElementById("remover").remove();
